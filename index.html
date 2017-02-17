@@ -5,7 +5,7 @@ des:这是我的主页
 ---
 <div>
 {% for post in site.posts %}
-	<a href="{{ site.baseurl }} /blogTest {{ post.url }}">
+	<a href="{{ site.baseurl }}{{ post.url }}">
 		<h2>{{ post.title }}</h2>
 	</a>
 	<h4>{{ post.date | date_to_string }}</h4>
